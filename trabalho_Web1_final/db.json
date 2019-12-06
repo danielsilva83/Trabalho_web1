@@ -1,17 +1,6 @@
 {
   "funcionarios": [
     {
-      "id": 2,
-      "nome": "Irwinn",
-      "sobrenome": "Pridmore",
-      "email": "ipridmore1@squarespace.com",
-      "genero": "M",
-      "cidade": "Pancoran",
-      "pais": "Indonesia",
-      "empresa": "Topicshots",
-      "salario": 12347.24
-    },
-    {
       "id": 3,
       "nome": "Cedric",
       "sobrenome": "Ormes",
