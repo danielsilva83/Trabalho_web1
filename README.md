@@ -82,14 +82,14 @@ seq|JOB|FILE INPUT|FILE OUTPUT|PATH  FILE JOB
 26|Merge resumo projetos funciton 2019 e porte segumento2|leitura_ajuste/*.parquet|classificacao_nivel.parquet|totvs_refactor/jobs/|seq|JOB|FILE INPUT|FILE OUTPUT|PATH  FILE JOB
 ----|------|----------|------------|-------------------|
 1|Data Miner unificado|Atualização/Dados/DATAMINER_UNIFICADO_v02_20230110.xlsx|Atualização/Dados/DATAMINER_manufatura.parquet|python totvs_refactor/|jobs/data_miner_unificado/main.py
-||||||
+|||||
 2|Uso clientes Manufatura|Atualização/Dados/USO_CLIENTES_MANUFATURA_0{m}{year}.txt|stata/dados/atualiza_uso.parquet|totvs_refactor/jobs/uso_clientes_manufatura/main.py
 |||Atualização/Dados/USO_CLIENTES_MANUFATURA_{m}{year}.txt||
 |||Atualização/Dados/USO_CLIENTES_MANUFATURA_tri_{year}_{m}.txt||
 |||||
 3|Área definition manufatura|Atualização/Dados/AreaDefinition_V03  - Manufatura_20230110.xlsx|stata/dados/niveis_rotinas_unicas.parquet||totvs_refactor/totvs_refactor/jobs/area_definition_manufatura
 |||Base Dados FIPE-20210106T003718Z-001/Base Dados FIPE/recebidos_20210219/cloud_analytics.xlsx|stata/dados/processo2.parquet|
-||||stata/dados/niveis_rotinas.parquet|
+|||stata/dados/niveis_rotinas.parquet|
 |||||
 4|Resumo projeto|resumo_projetos_function_2019*.csv|base_clientes_uso.parquet|totvs_refactor/jobs/resumo_projetos/main.py
 |||Base Dados FIPE-20210106T003718Z-001/Base Dados FIPE/recebidos_20210630/resumo_projetos_function_2020.csv||
@@ -99,8 +99,8 @@ seq|JOB|FILE INPUT|FILE OUTPUT|PATH  FILE JOB
 |||||
 5|Base clientes Manufatura|Atualização/Dados/AreaDefinition_V03  - Manufatura_20230110.xlsx|stata/dados/processo_*.parquet|totvs_refactor/jobs/area_definition_manufatura/main.py
 |||Base Dados FIPE-20210106T003718Z-001/Base Dados FIPE/recebidos_20210219/cloud_analytics.xls|stata/dados/processo2.parquet|
-||||stata/dados/niveis_rotinas.parquet|
-||||stata/dados/niveis_rotinas_unicas.parquet|
+|||stata/dados/niveis_rotinas.parquet|
+|||stata/dados/niveis_rotinas_unicas.parquet|
 |||||
 6|Append data frame pesos geral|stata/dados/pesos_geral_novo_Datasul.parquet |stata/dados/pesos_geral_novo.parquet|totvs_refactor/jobs/append_data_frame_pesos_geral/main.py
 |||tata/dados/pesos_geral_novo_Logix.parquet||
@@ -159,19 +159,19 @@ seq|JOB|FILE INPUT|FILE OUTPUT|PATH  FILE JOB
 |||||
 25|Merge linha cliente atualiza linha|totvs_novo.parquet|"""classificacao_nivel_atualizada.parquet"""|totvs_refactor/jobs/merge_data_frames/main.py
 |||classificacao_nivel.parquet||
-|||||
+||||
 26|Merge resumo projetos funciton 2019 e porte segumento2|leitura_ajuste/*.parquet|classificacao_nivel.parquet|totvs_refactor/jobs/merge_resumo_projetos_function_2019_porte_segmento2/main.py
 ||||
 27|Resumo projetos|Base Dados FIPE-20210106T003718Z-001/Base Dados FIPE/recebidos_20210630/resumo_projetos_function_2019.csv|stata/dados/Base_Clientes_Uso8.parquet|totvs_refactor/jobs/resumo_projetos/main.py
 |||Base Dados FIPE-20210106T003718Z-001/Base Dados| |
 |||stata/dados/atualiza_uso.parquetFIPE/recebidos_20210630/resumo_projetos_function_2020.csv| |
 |||Base Dados FIPE-20210106T003718Z-001/Base Dados FIPE/recebidos_20210630/resumo_projetos_function_2021.csv| |
-|||||
+||||
 28|Uso clientes manufatura|classificacao_nivel.parquet / totvs_novo.parquet /|tabela_Totvs_atualizada.parquet|totvs_refactor/jobs/uso_clientes_manufatura/main.pymerge_resumo_projetos_function_2019_porte_segmento2/main.py
-|||||
+||||
 27|Resumo projetos|Base Dados FIPE-20210106T003718Z-001/Base Dados FIPE/recebidos_20210630/resumo_projetos_function_2019.csv|stata/dados/Base_Clientes_Uso8.parquet|totvs_refactor/jobs/resumo_projetos/main.py
 |||Base Dados FIPE-20210106T003718Z-001/Base Dados| |
 |||stata/dados/atualiza_uso.parquetFIPE/recebidos_20210630/resumo_projetos_function_2020.csv| |
 |||Base Dados FIPE-20210106T003718Z-001/Base Dados FIPE/recebidos_20210630/resumo_projetos_function_2021.csv| |
-|||||
+||||
 28|Uso clientes manufatura|classificacao_nivel.parquet / totvs_novo.parquet /|tabela_Totvs_atualizada.parquet|totvs_refactor/jobs/uso_clientes_manufatura/main.py
