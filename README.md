@@ -158,10 +158,10 @@ seq|JOB|FILE INPUT|FILE OUTPUT|PATH  FILE JOB
 24|Merge Data Frames|"""base_rotinas.parquet"""|"""classificacao_nivel.parquet"""|totvs_refactor/jobs/merge_data_frames/main.py
 |||||
 25|Merge linha cliente atualiza linha|totvs_novo.parquet|"""classificacao_nivel_atualizada.parquet"""|totvs_refactor/jobs/merge_data_frames/main.py
-||classificacao_nivel.parquet||
+|||classificacao_nivel.parquet||
 |||||
-26|Merge resumo projetos funciton 2019 e porte segumento2|leitura_ajuste/*.parquet|classificacao_nivel.parquet|totvs_refactor/jobs/|merge_resumo_projetos_function_2019_porte_segmento2/main.py
-|||||
+26|Merge resumo projetos funciton 2019 e porte segumento2|leitura_ajuste/*.parquet|classificacao_nivel.parquet|totvs_refactor/jobs/merge_resumo_projetos_function_2019_porte_segmento2/main.py
+||||
 27|Resumo projetos|Base Dados FIPE-20210106T003718Z-001/Base Dados FIPE/recebidos_20210630/resumo_projetos_function_2019.csv|stata/dados/Base_Clientes_Uso8.parquet|totvs_refactor/jobs/resumo_projetos/main.py
 |||Base Dados FIPE-20210106T003718Z-001/Base Dados| |
 |||stata/dados/atualiza_uso.parquetFIPE/recebidos_20210630/resumo_projetos_function_2020.csv| |
