@@ -1,4 +1,4 @@
-INPUT|FILE OUTPUT|PATH  FILE JOB
+|seq|JOB|FILE INPUT|FILE OUTPUT|PATH  FILE JOB
 ----|------|----------|------------|-------------------|
 1|Data Miner unificado|Atualização/Dados/DATAMINER_UNIFICADO_v02_20230110.xlsx|Atualização/Dados/DATAMINER_manufatura.parquet|python totvs_refactor/|jobs/data_miner_unificado/main.py
 |||||
